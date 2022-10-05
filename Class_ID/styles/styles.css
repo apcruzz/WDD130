@@ -1,6 +1,9 @@
 .main-para {
     font-size: 1.5em;
     line-height: 1.5em;
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
 }
 
 #active {
@@ -10,6 +13,9 @@
 
 img {
     width: 80%;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
 }
 
 p {
@@ -18,4 +24,10 @@ p {
 
 a {
     font-size: 1.5em;
+}
+h1 {
+    text-align: center;
+}
+nav, footer {
+    text-align: center;
 }
