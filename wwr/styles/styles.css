@@ -1,6 +1,6 @@
 #content {
     max-width: 1600px;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .logo {
@@ -11,6 +11,9 @@
     width: 100%;
 }
       
+nav {
+    padding: 25px;
+}
 
 nav a {
     text-align: center;
@@ -22,8 +25,16 @@ nav a:hover {
     background-color: #ffb703;
 }
 
+a {
+    padding: 25px;
+}
+
 .home-title {
     background-color:#ffb703;
+}
+
+h1 {
+    margin: 50px 0;
 }
 
 h4 {
@@ -48,6 +59,7 @@ main section {
 
 body {
     background-color: #fcfbfb; 
+    margin: 0
 }
 header {
     background-color:#093b5f;
@@ -70,6 +82,7 @@ header {
 
 .msg {
     background-color: #8ecae6;
+    color: #093b5f;
 }
 
 .msg {
@@ -80,9 +93,15 @@ header {
     color: #093b5f;
 }
 
+img {
+    border: 4px solid steelblue;
+}
+
 footer {
     background-color: #ffcb69;
     color:#093b5f;
+    /* background-color: steelblue;
+    color: white; */
 }
 
 footer a {
@@ -96,6 +115,7 @@ footer a:hover {
 
 footer p {
     font-size: 1.2em;
+    padding: 25px;
 }
 
 footer p a:hover {
