@@ -1,0 +1,30 @@
+body {
+    background-color: gray;
+    margin: 50px auto; 
+}
+
+.background{
+    width: 100%;
+}
+
+.person {
+    border: 20px solid rgb(70, 68, 68);
+    width: 20%;
+    margin: 30px 5%;
+    border-radius: 50%;
+}
+
+.ice {
+    border: 20px solid rgb(70, 68, 68);    
+    width: 20%;
+    margin: 30px 5%;
+    border-radius: 50%;
+}
+
+.graphic {
+    border: 20px solid rgb(70, 68, 68);    
+    width: 20%;
+    margin: 30px 5%;
+    border-radius: 50%;
+    
+}
