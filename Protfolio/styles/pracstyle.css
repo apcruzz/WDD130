@@ -1,100 +1,123 @@
-/* * {
-    border: 2px solid blue; just a border
-} */
-
-/* img {
-    width: 50%;
-    display: block;
-    margin: 0 auto;
-    border: 4px solid steelblue;
-} */
-main p {
-    width: 80%;
-    margin: 50px auto;
-    color: white;
-    /*text-align: center;  we can either use this or not depending if we want to align it inside the block or not */
-}
-
- nav{ 
-    /* background-color: steelblue; */
-    color: white;
-    padding: 25px;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav a { /*use this to specify the fonts inside the nav  */
-    color:white;
-    font-size: 25px;
-    text-decoration: none; /*removes the underline*/
-    justify-content: space-around; /*gets the contents spaced out evenly */
-    padding: 20px   
-}
-
-nav a:hover { /*imported*/
-    color: black; /*color of the hover when the mouse moves to the navigatoin pane*/
-    background-color: #E8E9E3; /*color of the text before hover*/
-    border-radius: 10px; /*to make the box with smooth edges and angles*/
-    text-shadow: 2px 2px 50px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Use border-box for consistent sizing */
+    background-color: #0A4E53; /* Background color for the page */
 }
 
 body {
-    background-color: #0A4E53;
- 
+    font-family: Arial, sans-serif; /* Font for the body */
+    color: white; /* Text color */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* min-height: 100vh; */
 }
 
-.main-content{
-    display: grid; /*to position the elements effectively*/
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: (4, 1fr);
-    flex: 1; /*idk why i used this*/
+header {
+    background: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
 }
 
-#name{
-    margin: 80px 0; /* moves the text down*/
-    margin-left: 10%; /* moves the text to the left*/
-    font-size: 70px;
-    font-weight: bolder; /*makes text in bold*/
-    color: white;
-    grid-column: 1/2;
-    grid-row: 1/2;
+/* Header and Navigation */
+nav {
+    /* background-color: steelblue; Navigation background color */
+    color: white; /* Text color in navigation */
+    padding: 25px; /* Padding inside navigation */
+    text-align: center; /* Center align text */
+    display: flex; /* Use flexbox for navigation items */
+    justify-content: space-around; /* Space items evenly */
 }
 
-#major{
-    margin-left: 10%;
-    color: #E8E9E3;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin-top: -22%;
+nav a {
+    color: white; /* Link text color */
+    font-size: 25px; /* Font size for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 20px; /* Padding around links */
 }
 
-/* #my-image{
-    grid-column: 2/3;
-    grid-row: 1/4;
-    align-self: stretch;
-    height: 500px;
-    width: 700px;
-    object-fit: cover;
-    padding-bottom: 500px;
+nav a:hover {
+    color: black; /* Text color on hover */
+    background-color: #9fffcb; /* Background color on hover */
+    border-radius: 10px; /* Rounded corners on hover */
+    text-shadow: 2px 2px 50px rgba(0, 0, 0, 0.5); /* Text shadow on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+}
+
+/* Main Content Styling */
+/* Container Styling */
+.main-content {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+    grid-template-rows: auto auto auto auto; /* Define rows explicitly */
+    gap: 20px; /* Space between grid items */
+    padding: 50px 10%; /* Padding around the main content */
+    flex: 1; /* Allow main content to grow and fill available space */
+}
+
+#name {
+    font-size: 75px; /* Font size for name */
+    font-weight: bolder; /* Bold text */
+    grid-column: 1 / 2; /* Span one column */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+#major {
+    color: #E8E9E3; /* Text color for major */
+    grid-column: 1 / 2; /* Span one column */
+    margin-top: -30px; /* Add a bit of space at the top */
+
+}
+
+#overview {
+    grid-column: 1 / 2; /* Span one column */
+    margin-top: -20px; /* Remove top margin */
+}
+
+#button-box {
+    grid-column: 1 / 2; /* Span one column */
+   
+    margin-left: 0; /* Align button with the overview */
+}
+
+.resume {
+    margin-left: -104%;
+    margin-top: 15%; /* Adjust margin to move closer to the overview */
+    display: inline-block; /* Inline-block display */
+    padding: 15px 30px; /* Padding inside button */
+    border-radius: 50px; /* Rounded corners */
+    background-color:#9fffcb; /* Background color for button */
+    color: black; /* Text color for button */
+    text-decoration: none; /* Remove underline from link */
+}
+
+/* Image Styling */
+/* img {
+    width: 100%; Full width image
+    height: auto; Maintain aspect ratio
+    object-fit: cover; Cover the area
+    grid-column: 2 / 3; Span second column
+    grid-row: 1 / 5; Span all rows
+    align-self: stretch; Stretch image to fit
+    padding: 20px; Padding around image
 } */
 
-#overview{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    margin-top: -22%;
-    margin-left: 10%;
-}
-
+/* Footer Styling */
 footer {
-    font-size: 20px;
-    background: rgba(0, 0, 0, 0.1);
-    text-align: left;
-    color: white;
-    padding: 25px;
-    text-align: left;
+    font-size: 20px; /* Font size for footer text */
+    background: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+    color: white; /* Text color for footer */
+    padding-left: 150px;
     display: flex;
+    align-items: center;
 }
 
+.social a img{
+    height: 40px;
+    width: 40px;
+    gap: 20px;
+    padding-left: 10px;
+}
 
+.social {
+    padding-left: 80px;
+}
