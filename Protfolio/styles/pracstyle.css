@@ -62,7 +62,7 @@ nav a:hover {
 }
 
 #major {
-    color: #E8E9E3; /* Text color for major */
+    color: #9fffcb; /* Text color for major */
     grid-column: 1 / 2; /* Span one column */
     margin-top: -30px; /* Add a bit of space at the top */
 
@@ -121,3 +121,7 @@ footer {
 .social {
     padding-left: 80px;
 }
+
+/* ---------------------------------------------------------- PAGE TWO ----------------------------------------------------------*/
+
+
