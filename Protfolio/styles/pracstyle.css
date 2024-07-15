@@ -62,7 +62,7 @@ nav a:hover {
 }
 
 #major {
-    color: #9fffcb; /* Text color for major */
+    color: #EFEFDA; /* Text color for major */
     grid-column: 1 / 2; /* Span one column */
     margin-top: -30px; /* Add a bit of space at the top */
 
@@ -85,7 +85,7 @@ nav a:hover {
     display: inline-block; /* Inline-block display */
     padding: 15px 30px; /* Padding inside button */
     border-radius: 50px; /* Rounded corners */
-    background-color:#9fffcb; /* Background color for button */
+    background-color:#EFEFDA; /* Background color for button */
     color: black; /* Text color for button */
     text-decoration: none; /* Remove underline from link */
 }
