@@ -125,22 +125,20 @@ footer {
 /* ---------------------------------------------------------- PAGE TWO ----------------------------------------------------------*/
 
 /* Main Content Styling */
-.main-content {
+.main-subcontent {
     display: grid;
-    grid-template-columns: repeat(11, 1fr); /* Define 11 equal columns */
+    grid-template-columns: repeat(15, 1fr); /* Define 11 equal columns */
     gap: 20px; /* Add gap between grid items */
     padding: 50px 10%;
     flex: 1;
 }
 
-.Myphoto, .Tourguide, .first-sculp, #education, #work-experience, #interests {
-    background-color: #114B5F;
-    border: 5px solid;
-    padding: 50px 20px; /* Adjusted padding to uniform value */
-}
+/* .Myphoto, .Tourguide, .first-sculp, #education, #work-experience, #interests {
+    
+} */
 
 .Myphoto, .Tourguide, .first-sculp {
-    margin-right: 500px;
+    margin-left: -200px;
 }
 
 .Myphoto {
@@ -163,22 +161,27 @@ footer {
 
 #education, #work-experience, #interests {
     margin-left: 50px; /* Moved common margin to single rule */
+    background-color: #114B5F;
+    border: 5px solid;
+    padding: 50px 20px; /* Adjusted padding to uniform value */
+    grid-column: 9 / 15;
+    align-self:center;
 }
 
 #education {
-    grid-column: 5 / 11;
+    
     grid-row: 1 / 3;
     margin-top: 110px;
 }
 
 #work-experience {
-    grid-column: 5 / 11;
+    
     grid-row: 3 / 5;
     margin-top: 130px;
 }
 
 #interests {
-    grid-column: 5 / 11;
+    
     grid-row: 5 / 7;
     margin-top: 140px;
 }
