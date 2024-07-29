@@ -15,10 +15,69 @@
             <a href="contactme.html">Contact Me</a>
         </nav>
     </header>
+    <div class="example">
+    <section id="education1">
+        <h2>Education and Achievements</h2>
+        <p>I am currently studying at Brigham Young University-Hawaii (BYUH), majoring in Computer Science. As a dedicated student, I have consistently achieved high academic standards, earning a place on the Dean's List. In addition to my major, I am also pursuing minors in Arts and Organizational Leadership, which provide me with a well-rounded education and diverse skill set.</p>
+    </section>
+    </div>
+
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/calvin.png" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/randomman.png" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/calvin.png" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    
+      <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
     <main class="main-subcontent">
         <!-- <h1>About Me</h1> -->
         <section class="Myphoto">
-            <img class="about-img" src="images/second-sculpture.png" alt="tent in mountains">
+            <img class="about-img" src="images/calvin.png" alt="tent in mountains">
         </section>
         <!-- Education and Achievements Section -->
         <section id="education">
@@ -41,6 +100,8 @@
             <h2>Interests and Hobbies</h2>
             <p>Outside of my academic and professional pursuits, I have a deep love for the arts. One of my favorite hobbies is clay sculpting, where I enjoy creating intricate and expressive pieces. This artistic outlet allows me to relax and express my creativity in unique and tangible ways.</p>
         </section>
+
+    
     </main>
     <footer>
         <p>My Portfolio 2024 &copy</p>
