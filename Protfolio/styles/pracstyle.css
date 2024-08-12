@@ -186,6 +186,9 @@ footer {
     margin-top: 140px;
 }
 
+/* ----------------------------------------------------------ADDED HERE IF WANT TO REMOVE ---------------------------------------------------------- */
+
+
 .example {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
