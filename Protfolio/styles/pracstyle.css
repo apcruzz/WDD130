@@ -201,7 +201,7 @@ footer {
     margin-left: 60px;
     border: solid;
     padding: 25px;
-    max-width: 500px;
+    display:inline-table;
 }
 
 /* Slideshow container */
