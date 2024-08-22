@@ -188,6 +188,9 @@ footer {
 
 /* ----------------------------------------------------------ADDED HERE IF WANT TO REMOVE ---------------------------------------------------------- */
 
+#about-title{
+    text-align:center;
+}
 
 .example {
     display: grid;
@@ -200,7 +203,7 @@ footer {
     grid-row: 1/3;
     padding: 80px;
     /* border: solid; */
-    margin-top: 280px;
+    margin-top: 260px;
 }
 
 /* Slideshow container */
@@ -208,9 +211,9 @@ footer {
     max-width: 700px;    
     /* position: relative; */
     /* margin: auto; */
-    margin-top: 90px;
     margin-left: 30px;
-    border: solid;
+    margin-top: -70px;
+    /* border: solid; */
     grid-column: 1/2;
     grid-row: 1/3;
   }
